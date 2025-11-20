@@ -1,20 +1,60 @@
 # Trongate Icons
 
-**Version 0.1.0** (Beta)
+**Version 0.1.1** (Beta)
 
 A lightweight icon set for the Trongate PHP framework. Trongate Icons provides scalable vector icons that work seamlessly with Trongate's existing CSS framework.
 
 ## Installation
 
-1. Download the latest release from the [releases page](../../releases)
-2. Extract the `trongate-icons` folder into your Trongate project's `public` directory
-3. Add the CSS file to your page header:
+### Step 1: Download Trongate Icons from GitHub
+
+1. Go to the Trongate Icons GitHub repository
+2. Click the green **"Code"** button
+3. Select **"Download ZIP"**
+4. Extract the downloaded ZIP file to a temporary location on your computer
+
+### Step 2: Copy the CSS File
+
+1. Locate the `trongate-icons.css` file from the extracted folder
+2. Copy it to your project's `public/css` directory
+3. The file path should be: `your-project/public/css/trongate-icons.css`
+
+### Step 3: Copy the Icons Folder
+
+1. Locate the `trongate-icons` folder (containing the SVG files) from the extracted folder
+2. Copy the entire `trongate-icons` folder to your project's `public` directory
+3. The folder path should be: `your-project/public/trongate-icons/`
+4. Individual icon paths will be: `your-project/public/trongate-icons/user.svg`, `your-project/public/trongate-icons/star.svg`, etc.
+
+### Step 4: Add the Stylesheet to Your Project
+
+In your template or view files, add the following line in the `<head>` section:
 
 ```html
-<link rel="stylesheet" href="<?= BASE_URL ?>trongate-icons/trongate-icons.css">
+<link rel="stylesheet" href="<?= BASE_URL ?>css/trongate-icons.css">
 ```
 
 **Note:** Ensure `trongate.css` is also loaded, as it provides sizing classes (xl, lg, sm, xs) and effects.
+
+### Step 5: Commit Your Changes (Git - Optional)
+
+If your project is tracked by Git:
+
+```bash
+cd /path/to/your-project
+git add public/css/trongate-icons.css
+git add public/trongate-icons/
+git commit -m "Add Trongate Icons"
+```
+
+### Step 6: Start Using Icons
+
+You can now use icons in your project:
+
+```html
+<i class="tg tg-user"></i>
+<i class="tg tg-star"></i>
+```
 
 ## Quick Start
 
